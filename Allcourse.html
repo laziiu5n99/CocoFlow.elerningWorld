@@ -1,0 +1,225 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>CocoFlow · All Courses</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+<!--顶部栏-->
+    <header class="topbar" id="topbar">
+      <div class="container topbar__inner topbar__inner--all">
+        <div class="navleft" aria-label="Global navigation">
+          <a class="brand brand--link" href="./index.html" aria-label="CocoFlow home">
+            <div class="brand__logo">CocoFlow</div>
+          </a>
+<!--导航栏-->
+          <nav class="menu" aria-label="Primary">
+            <div class="crumb">
+              <a class="crumb__link" href="./index.html">Explore</a>
+              <span class="crumb__sep">›</span>
+              <span class="crumb__current" aria-current="page">My Courses</span>
+            </div>
+          </nav>
+        </div>
+<!--搜索栏-->
+        <div class="topsearch" role="search" aria-label="Global course search">
+          <input
+            id="searchInput"
+            class="topsearch__input"
+            type="text"
+            placeholder="Search courses, skills, providers…"
+            autocomplete="off"
+          />
+          <button class="topsearch__btn" id="searchButton" type="button" aria-label="Search">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="icon">
+              <path
+                d="M10.5 3a7.5 7.5 0 1 0 4.61 13.42l4.23 4.23a1 1 0 0 0 1.42-1.42l-4.23-4.23A7.5 7.5 0 0 0 10.5 3Zm0 2a5.5 5.5 0 1 1 0 11a5.5 5.5 0 0 1 0-11Z"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <div class="navright" aria-label="Account and utilities">
+          <button class="iconbtn" type="button" aria-label="Language">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="icon icon--muted">
+              <path
+                d="M12 2a10 10 0 1 0 0 20a10 10 0 0 0 0-20Zm7.93 9h-3.17a15.7 15.7 0 0 0-1.13-5.02A8.02 8.02 0 0 1 19.93 11ZM12 4c.8 0 1.84 1.3 2.55 4H9.45C10.16 5.3 11.2 4 12 4ZM4.07 13h3.17c.22 1.78.68 3.52 1.13 5.02A8.02 8.02 0 0 1 4.07 13ZM7.24 11H4.07a8.02 8.02 0 0 1 4.3-5.02c-.45 1.5-.91 3.24-1.13 5.02Zm2.21 2h5.1c-.32 2.1-1.22 5-2.55 5c-1.33 0-2.23-2.9-2.55-5Zm7.31 0h3.17a8.02 8.02 0 0 1-4.3 5.02c.45-1.5.91-3.24 1.13-5.02Zm-7.31-2c.32-2.1 1.22-5 2.55-5c1.33 0 2.23 2.9 2.55 5h-5.1Z"
+              />
+            </svg>
+          </button>
+          <button class="iconbtn" type="button" aria-label="Notifications">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="icon icon--muted">
+              <path
+                d="M12 22a2.2 2.2 0 0 0 2.2-2.2h-4.4A2.2 2.2 0 0 0 12 22Zm7-6V11a7 7 0 0 0-5-6.7V3a2 2 0 1 0-4 0v1.3A7 7 0 0 0 5 11v5l-1.6 1.6a1 1 0 0 0 .7 1.7h15.8a1 1 0 0 0 .7-1.7L19 16Z"
+              />
+            </svg>
+          </button>
+          <button class="avatar" type="button" aria-label="Account">
+            <span class="avatar__dot"></span>
+            <span class="avatar__dot"></span>
+            <span class="avatar__dot"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!--主体内容-->
+    <main id="main">
+      <section class="section section--tight">
+        <div class="container">
+          <div class="filterbar" aria-label="Filter and sort">
+            <div class="filters is-open" id="filters" aria-hidden="false">
+              <label class="fgroup">
+                <span class="flabel">Topic</span>
+                <select class="fselect" id="filterTopic">
+                  <option value="">Any</option>
+                </select>
+              </label>
+              <label class="fgroup">
+                <span class="flabel">Length</span>
+                <select class="fselect" id="filterLength">
+                  <option value="">Any</option>
+                  <option value="short">Short (≤ 4h)</option>
+                  <option value="medium">Medium (5–8h)</option>
+                  <option value="long">Long (9h+)</option>
+                </select>
+              </label>
+              <label class="fgroup">
+                <span class="flabel">Language</span>
+                <select class="fselect" id="filterLang">
+                  <option value="">Any</option>
+                  <option value="English">English</option>
+                </select>
+              </label>
+              <label class="fgroup">
+                <span class="flabel">Level</span>
+                <select class="fselect" id="filterLevel">
+                  <option value="">Any</option>
+                  <option value="Beginner">Beginner</option>
+                  <option value="Intro">Intro</option>
+                  <option value="Intermediate">Intermediate</option>
+                </select>
+              </label>
+              <label class="fgroup">
+                <span class="flabel">Sort</span>
+                <select class="fselect" id="sortBy">
+                  <option value="relevance">Relevance</option>
+                  <option value="durationAsc">Duration (short → long)</option>
+                  <option value="durationDesc">Duration (long → short)</option>
+                </select>
+              </label>
+            </div>
+          </div>
+          
+          <div class="section__head section__head--center">
+            <div class="section__title">All Courses</div>
+            <div class="section__sub" id="allCoursesMeta">Browse all courses.</div>
+          </div>
+          <div class="agrid" id="allCoursesGrid" aria-label="All courses grid"></div>
+          <div class="morebar" aria-label="All courses actions">
+            <button class="morebtn" type="button" id="allShowMore">Show more</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section__head">
+            <div class="section__title">You may also like</div>
+            <button class="downmore" type="button" id="likeMore" aria-label="Load more recommendations">
+              <span>More</span>
+              <svg viewBox="0 0 24 24" class="icon icon--muted" aria-hidden="true">
+                <path
+                  d="M6.3 9.5a1 1 0 0 1 1.4 0l4.3 4.3l4.3-4.3a1 1 0 1 1 1.4 1.4l-5 5a1 1 0 0 1-1.4 0l-5-5a1 1 0 0 1 0-1.4Z"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="rgrid" id="likeGrid" aria-label="Recommendations grid"></div>
+        </div>
+      </section>
+
+      <section class="section section--tight">
+        <div class="container">
+          <div class="section__head">
+            <div class="section__title">Recently viewed</div>
+            <button class="downmore" type="button" id="recentMore" aria-label="Load more recently viewed">
+              <span>More</span>
+              <svg viewBox="0 0 24 24" class="icon icon--muted" aria-hidden="true">
+                <path
+                  d="M6.3 9.5a1 1 0 0 1 1.4 0l4.3 4.3l4.3-4.3a1 1 0 1 1 1.4 1.4l-5 5a1 1 0 0 1-1.4 0l-5-5a1 1 0 0 1 0-1.4Z"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="rgrid" id="recentGrid" aria-label="Recently viewed grid"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" aria-label="Footer">
+      <div class="container footer__grid">
+        <section class="footer__col">
+          <div class="footer__title">CocoFlow</div>
+          <a class="footer__link" href="#" role="link">About</a>
+          <a class="footer__link" href="#" role="link">Social impact</a>
+          <a class="footer__link" href="#" role="link">Free courses</a>
+          <a class="footer__link" href="#" role="link">Share your learning story</a>
+        </section>
+
+        <section class="footer__col">
+          <div class="footer__title">Community</div>
+          <a class="footer__link" href="#" role="link">Learners</a>
+          <a class="footer__link" href="#" role="link">Partners</a>
+          <a class="footer__link" href="#" role="link">Beta testers</a>
+          <a class="footer__link" href="#" role="link">Blog</a>
+          <a class="footer__link" href="#" role="link">Partner blog</a>
+          <a class="footer__link" href="#" role="link">Engineering blog</a>
+        </section>
+
+        <section class="footer__col">
+          <div class="footer__title">More</div>
+          <a class="footer__link" href="#" role="link">Press</a>
+          <a class="footer__link" href="#" role="link">Investors</a>
+          <a class="footer__link" href="#" role="link">Terms</a>
+          <a class="footer__link" href="#" role="link">Privacy</a>
+          <a class="footer__link" href="#" role="link">Help</a>
+          <a class="footer__link" href="#" role="link">Contact</a>
+          <a class="footer__link" href="#" role="link">Cookie preferences</a>
+        </section>
+
+        <section class="footer__col footer__col--download">
+          <div class="store-btn" role="button" tabindex="0" aria-label="App Store">
+            <div class="store-btn__logo"></div>
+            <div class="store-btn__text">App Store</div>
+          </div>
+          <div class="store-btn" role="button" tabindex="0" aria-label="Google Play">
+            <div class="store-btn__logo">▶</div>
+            <div class="store-btn__text">Google Play</div>
+          </div>
+        </section>
+      </div>
+
+      <div class="footer__bottom">
+        <div class="footer__copyright">© 2026 CocoFlow. All rights reserved.</div>
+      </div>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <div class="ctooltip" id="courseTooltip" aria-hidden="true">
+      <div class="ctooltip__inner" id="courseTooltipInner"></div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

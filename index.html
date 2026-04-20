@@ -1,0 +1,562 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>CocoFlow · Explore</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <!--顶部栏-->
+    <header class="topbar" id="topbar">
+      <div class="container topbar__inner">
+        <div class="brand" aria-label="CocoFlow Explore">
+          <div class="brand__logo">CocoFlow</div>
+          <div class="brand__tag">Explore</div>
+        </div>
+        <!--登录按钮-->
+        <nav class="auth" aria-label="Quick links">
+          <a class="linklike" href="./Allcourse.html" role="link">All courses</a>
+          <button class="linklike" type="button">login</button>
+        </nav>
+      </div>
+    </header>
+
+    <!--主体内容-->
+    <main id="main">
+      <section class="hero">
+        <div class="container hero__inner">
+          <h1 class="hero__title">What do you want to learn?</h1>
+          <!--搜索框-->
+          <div class="search" role="search" aria-label="Course search">
+            <input
+              id="searchInput"
+              class="search__input"
+              type="text"
+              placeholder="Search AI, coding, career skills…"
+              autocomplete="off"
+            />
+            <button class="search__button" id="searchButton" type="button" aria-label="Search">
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="icon">
+                <path
+                  d="M10.5 3a7.5 7.5 0 1 0 4.61 13.42l4.23 4.23a1 1 0 0 0 1.42-1.42l-4.23-4.23A7.5 7.5 0 0 0 10.5 3Zm0 2a5.5 5.5 0 1 1 0 11a5.5 5.5 0 0 1 0-11Z"
+                />
+              </svg>
+            </button>
+          </div>
+          <!--搜索推荐标签-->
+          <div class="chips" aria-label="Suggested searches">
+            <div class="chips__row">
+              <button class="chip" type="button">Upskill as a digital marketing specialist</button>
+              <button class="chip" type="button">Best machine learning course to start</button>
+              <button class="chip" type="button">Jobs with web development skills</button>
+ </div>
+            <div class="chips__row">
+              <button class="chip" type="button">What is prompt engineering?</button>
+              <button class="chip" type="button">Build a nutritious portfolio</button>
+              <button class="chip" type="button">Prerequisites for AI</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--广告横幅区-->
+      <section class="ads" >
+        <div class="container ads__inner">
+          <div class="ad skeleton" role="img" aria-label="ad banner">
+            <div class="ad__text">
+              <img id="adImage" src="imgs/ad banner1.png" alt="Ad Banner" style=" width: 100%; height: auto; display: block;border-radius: 12px;margin: 20px auto; max-width: 100%;">
+              <div class="ad-arrow ad-arrow-left" aria-label="Previous ad">&lt;</div>
+              <div class="ad-arrow ad-arrow-right" aria-label="Next ad">&gt;</div>
+            </div>
+            <div class="ad-indicators">
+              <span class="ad-dot active" data-index="0"></span>
+              <span class="ad-dot" data-index="1"></span>
+              <span class="ad-dot" data-index="2"></span>
+              <span class="ad-dot" data-index="3"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+        <!-- 合作机构栏 START -->
+        <section class="partners-section" aria-label="Partner institutions">
+          <div class="container">
+            <div class="partners-head">
+              <div class="partners-title">Trusted by</div>
+              <div class="partners-subtitle">Leading institutions and industry partners</div>
+            </div>
+          </div>
+                  <div class="partners-carousel" aria-label="Partner logos">
+                    <div class="partner-logo-container">
+                        <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/00atxywtfxvd/3ZIhQ7yxmgGMFZGtlqpCG6/0d0f40bc5133948bb3805cab25af62ba/Google-G_360x360.png?auto=format%2Ccompress&w=48&h=48" width="48" height="48" alt="Google" />
+                    </div>
+                    <div class="partner-logo-container">
+                        <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/00atxywtfxvd/7iLJYdbTLExBFAgVoHe2Pc/1735062f2f3a6df1dca8cfd9f1815098/ibm-logo.png?auto=format%2Ccompress&w=48&h=48" width="48" height="48" alt="IBM" />
+                    </div>
+                    <div class="partner-logo-container">
+                        <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/00atxywtfxvd/11pJTA8yOZPwVRMKnSKPRz/340cf59915e8ce0d3b993d39959972d6/eded33b5eb1694336861de4bfda6d36bf72b7780.png?auto=format%2Ccompress&w=48&h=48" width="48" height="48" alt="Microsoft" />
+                    </div>
+                    <div class="partner-logo-container">
+                        <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/00atxywtfxvd/1BjGzhrTBjvvOPuzuqQDHS/81bdfa5d44c5ec8c0364e8ee4761ccff/200x48-illinois.png?auto=format%2Ccompress&w=48&h=48" width="48" height="48" alt="University of Illinois" />
+                    </div>
+                    <div class="partner-logo-container">
+                        <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/00atxywtfxvd/88r0gwMY5y55z3J0h1T4M/e80fdcb65ff8681943c5394c670f6b7d/OAI_MVP_01_OpenAI_Logo_Black.png?auto=format%2Ccompress&w=48&h=48" width="48" height="48" alt="OpenAI" />
+                    </div>
+                    <div class="partner-logo-container">
+                        <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/00atxywtfxvd/B6gbch3CrIAfBm9F0GpE5/51c6f4fbaf2b25ef11fce8ef9563b7d9/Icon.png?auto=format%2Ccompress&w=48&h=48" width="48" height="48" alt="DeepLearning.AI" />
+                    </div>
+                    <div class="partner-logo-container">
+                        <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/00atxywtfxvd/1s6p4WQHsv79stjgyiWBtI/d55f3608a884d6d1e48f78935b73362f/3c8a16b167a785920d061664a6512c3a60cdb30e.png?auto=format%2Ccompress&w=48&h=48" width="48" height="48" alt="Stanford University" />
+                    </div>
+                    <div class="partner-logo-container">
+                        <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/00atxywtfxvd/3Y7rH8FUwg4eai7LK5j9u3/880203b6e241e81112bf48f252ca8e72/Penn-badge.png?auto=format%2Ccompress&w=48&h=48" width="48" height="48" alt="University of Pennsylvania" />
+                    </div>
+                    <div class="partner-logo-container">
+                        <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/00atxywtfxvd/7sWcR45W6I4bvFrJfCmb5d/2dff9bbefe50a9fcbcf89b2e5ee7032e/umich.png?auto=format%2Ccompress&w=48&h=48" width="48" height="48" alt="University of Michigan" />
+                    </div>
+                  </div>
+        </section>
+                
+        <!-- Popular lists -->
+      <section class="section">
+        <div class="container">
+          <div class="section__head section__head--center">
+            <div class="section__title">Popular Courses</div>
+          </div>
+
+          <div class="popular-lists" aria-label="Popular lists">
+            <section class="vpanel" aria-label="Popular courses list">
+              <div class="vpanel__head">
+                <div class="vpanel__title">Popular Courses</div>
+              </div>
+              <div class="vpanel__body vpanel__body--scroll" aria-label="Popular courses (up to 5 visible)">
+                <ol class="vlist">
+                  <li class="vitem">
+                    <div class="vitem__title">Deep Learning Fundamentals</div>
+                    <div class="vitem__desc">Start from scratch and build intuition for neural networks.</div>
+                    <div class="vitem__meta">
+                      <span class="vmeta">Duration: 9h</span>
+                      <span class="vmeta">Level: Beginner</span>
+                    </div>
+                    <div class="popover" role="note" aria-label="Course details">
+                      <div class="popover__title">Course info</div>
+                      <div class="popover__tags">
+                        <span class="tag tag--primary">Neural networks</span>
+                        <span class="tag">Hands-on</span>
+                      </div>
+                      <div class="popover__facts">
+                        <span>Level: Beginner</span>
+                        <span>Time: 9 hours</span>
+                        <span>Language: English</span>
+                      </div>
+                      <div class="popover__desc">
+                        A beginner-friendly path to understand core deep learning ideas with practical intuition and examples.
+                      </div>
+                      <ul class="popover__list">
+                        <li>Forward/backprop intuition</li>
+                        <li>Training loops and evaluation</li>
+                        <li>Overfitting and regularization</li>
+                      </ul>
+                      <button class="btn" type="button">View course</button>
+                    </div>
+                  </li>
+                  <li class="vitem">
+                    <div class="vitem__title">ChatGPT Prompt Engineering</div>
+                    <div class="vitem__desc">Write reliable prompts for brainstorming, editing, and automation.</div>
+                    <div class="vitem__meta">
+                      <span class="vmeta">Duration: 7h</span>
+                      <span class="vmeta">Level: Intro</span>
+                    </div>
+                    <div class="popover" role="note" aria-label="Course details">
+                      <div class="popover__title">Course info</div>
+                      <div class="popover__tags">
+                        <span class="tag tag--primary">GenAI</span>
+                        <span class="tag">Templates</span>
+                      </div>
+                      <div class="popover__facts">
+                        <span>Level: Intro</span>
+                        <span>Time: 7 hours</span>
+                        <span>Language: English</span>
+                      </div>
+                      <div class="popover__desc">
+                        Learn prompt patterns that improve reliability: constraints, examples, critique loops, and output formatting.
+                      </div>
+                      <ul class="popover__list">
+                        <li>Prompt patterns for daily tasks</li>
+                        <li>Quality checks and guardrails</li>
+                        <li>Reusable prompt libraries</li>
+                      </ul>
+                      <button class="btn" type="button">View course</button>
+                    </div>
+                  </li>
+                  <li class="vitem">
+                    <div class="vitem__title">Machine Learning Essentials</div>
+                    <div class="vitem__desc">Hands-on with scikit-learn: supervised and unsupervised workflows.</div>
+                    <div class="vitem__meta">
+                      <span class="vmeta">Duration: 12h</span>
+                      <span class="vmeta">Level: Intermediate</span>
+                    </div>
+                    <div class="popover" role="note" aria-label="Course details">
+                      <div class="popover__title">Course info</div>
+                      <div class="popover__tags">
+                        <span class="tag tag--primary">scikit-learn</span>
+                        <span class="tag">Projects</span>
+                      </div>
+                      <div class="popover__facts">
+                        <span>Level: Intermediate</span>
+                        <span>Time: 12 hours</span>
+                        <span>Language: English</span>
+                      </div>
+                      <div class="popover__desc">
+                        Practice the ML workflow end-to-end: data prep, model training, validation, and iteration.
+                      </div>
+                      <ul class="popover__list">
+                        <li>Feature engineering essentials</li>
+                        <li>Model selection and metrics</li>
+                        <li>Clustering and dimensionality reduction</li>
+                      </ul>
+                      <button class="btn" type="button">View course</button>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+            </section>
+
+            <section class="vpanel" aria-label="Popular AI app areas list">
+              <div class="vpanel__head">
+                <div class="vpanel__title">Popular AI App Areas</div>
+              </div>
+              <div class="vpanel__body vpanel__body--scroll" aria-label="Popular AI app areas (up to 5 visible)">
+                <ol class="vlist">
+                  <li class="vitem">
+                    <div class="vitem__title">Content Creation</div>
+                    <div class="vitem__desc">
+                      Featured apps: <span class="vitem__accent">ChatGPT</span>
+                    </div>
+                    <div class="vitem__meta">
+                      <span class="vmeta">Writing</span>
+                      <span class="vmeta">Summaries</span>
+                      <span class="vmeta">Rewrite</span>
+                    </div>
+                  </li>
+                  <li class="vitem">
+                    <div class="vitem__title">Image Generation</div>
+                    <div class="vitem__desc">
+                      Featured apps: <span class="vitem__accent">Midjourney</span>, <span class="vitem__accent">Stable Diffusion</span>
+                    </div>
+                    <div class="vitem__meta">
+                      <span class="vmeta">Illustration</span>
+                      <span class="vmeta">Product design</span>
+                      <span class="vmeta">Marketing</span>
+                    </div>
+                  </li>
+                  <li class="vitem">
+                    <div class="vitem__title">Office Automation</div>
+                    <div class="vitem__desc">
+                      Featured apps: <span class="vitem__accent">Notion AI</span>, <span class="vitem__accent">Copilot</span>
+                    </div>
+                    <div class="vitem__meta">
+                      <span class="vmeta">Docs</span>
+                      <span class="vmeta">Analysis</span>
+                      <span class="vmeta">Meeting notes</span>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+      
+        <!-- New courses -->
+      <section class="section section--tight">
+        <div class="container">
+          <div class="section__head">
+            <div class="section__title">New Courses</div>
+          </div>
+
+          <div class="row row--tiles" data-row aria-label="New courses list">
+            <button class="row__nav row__nav--left" type="button" aria-label="Scroll left" data-row-nav="-1">
+              <svg viewBox="0 0 24 24" class="icon">
+                <path
+                  d="M14.5 6.3a1 1 0 0 1 0 1.4L10.2 12l4.3 4.3a1 1 0 1 1-1.4 1.4l-5-5a1 1 0 0 1 0-1.4l5-5a1 1 0 0 1 1.4 0Z"
+                />
+              </svg>
+            </button>
+
+            <div class="row__viewport" data-row-viewport tabindex="0" aria-label="New Courses carousel">
+              <div class="row__track">
+                <article class="course-card" tabindex="0" aria-label="Course: Foundations of Data Visualization">
+                  <div class="course-card__top">
+                    <div>
+                      <div class="course-card__picture">New</div>
+                      <div class="course-card__name">Foundations of Data Visualization</div>
+                      <div class="course-card__path">Data · Analytics</div>
+                    </div>
+                    <div class="course-card__logo" aria-label="Provider logo">
+                      <img
+                        src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/00atxywtfxvd/3ZIhQ7yxmgGMFZGtlqpCG6/0d0f40bc5133948bb3805cab25af62ba/Google-G_360x360.png?auto=format%2Ccompress&w=48&h=48"
+                        width="28"
+                        height="28"
+                        alt="Google"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="course-card__metaRow">
+                    <div class="course-card__meta">4h · Beginner</div>
+                    <div class="course-card__meta">Updated 2026</div>
+                  </div>
+
+                  <div class="popover" role="note" aria-label="Course details">
+                    <div class="popover__title">Course info</div>
+                    <div class="popover__tags">
+                      <span class="tag tag--primary">Hands-on</span>
+                      <span class="tag">Portfolio-ready</span>
+                    </div>
+                    <div class="popover__facts">
+                      <span>Level: Beginner</span>
+                      <span>Time: 4 hours</span>
+                      <span>Language: English</span>
+                    </div>
+                    <div class="popover__desc">
+                      Learn chart selection, visual hierarchy, and storytelling patterns you can reuse in reports and presentations.
+                    </div>
+                    <ul class="popover__list">
+                      <li>Choose the right chart for the question</li>
+                      <li>Design clear layouts with typography</li>
+                      <li>Avoid common misleading visuals</li>
+                    </ul>
+                    <button class="btn" type="button">View course</button>
+                  </div>
+                </article>
+
+                <article class="course-card" tabindex="0" aria-label="Course: Practical SQL for Reporting">
+                  <div class="course-card__top">
+                    <div>
+                      <div class="course-card__picture">New</div>
+                      <div class="course-card__name">Practical SQL for Reporting</div>
+                      <div class="course-card__path">SQL · Analytics</div>
+                    </div>
+                    <div class="course-card__logo" aria-label="Provider logo">
+                      <img
+                        src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/00atxywtfxvd/7iLJYdbTLExBFAgVoHe2Pc/1735062f2f3a6df1dca8cfd9f1815098/ibm-logo.png?auto=format%2Ccompress&w=48&h=48"
+                        width="28"
+                        height="28"
+                        alt="IBM"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="course-card__metaRow">
+                    <div class="course-card__meta">6h · Beginner</div>
+                    <div class="course-card__meta">Updated 2026</div>
+                  </div>
+
+                  <div class="popover" role="note" aria-label="Course details">
+                    <div class="popover__title">Course info</div>
+                    <div class="popover__tags">
+                      <span class="tag tag--primary">Querying</span>
+                      <span class="tag">Real datasets</span>
+                    </div>
+                    <div class="popover__facts">
+                      <span>Level: Beginner</span>
+                      <span>Time: 6 hours</span>
+                      <span>Language: English</span>
+                    </div>
+                    <div class="popover__desc">
+                      Build clean, maintainable queries for dashboards and weekly reporting. Learn joins, window functions, and common patterns.
+                    </div>
+                    <ul class="popover__list">
+                      <li>Write readable joins and CTEs</li>
+                      <li>Use window functions for ranking</li>
+                      <li>Turn raw tables into metrics</li>
+                    </ul>
+                    <button class="btn" type="button">View course</button>
+                  </div>
+                </article>
+
+                <article class="course-card" tabindex="0" aria-label="Course: Build Modern UI with CSS">
+                  <div class="course-card__top">
+                    <div>
+                      <div class="course-card__picture">New</div>
+                      <div class="course-card__name">Build Modern UI with CSS</div>
+                      <div class="course-card__path">Web · Front-end</div>
+                    </div>
+                    <div class="course-card__logo" aria-label="Provider logo">
+                      <img
+                        src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/00atxywtfxvd/11pJTA8yOZPwVRMKnSKPRz/340cf59915e8ce0d3b993d39959972d6/eded33b5eb1694336861de4bfda6d36bf72b7780.png?auto=format%2Ccompress&w=48&h=48"
+                        width="28"
+                        height="28"
+                        alt="Microsoft"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="course-card__metaRow">
+                    <div class="course-card__meta">5h · Intro</div>
+                    <div class="course-card__meta">Updated 2026</div>
+                  </div>
+
+                  <div class="popover" role="note" aria-label="Course details">
+                    <div class="popover__title">Course info</div>
+                    <div class="popover__tags">
+                      <span class="tag tag--primary">UI</span>
+                      <span class="tag">Responsive</span>
+                    </div>
+                    <div class="popover__facts">
+                      <span>Level: Intro</span>
+                      <span>Time: 5 hours</span>
+                      <span>Language: English</span>
+                    </div>
+                    <div class="popover__desc">
+                      Build polished layouts with modern CSS. Focus on spacing, grid, interactive states, and accessibility-friendly patterns.
+                    </div>
+                    <ul class="popover__list">
+                      <li>Grid and flexbox layout patterns</li>
+                      <li>Design tokens and theming</li>
+                      <li>Accessible focus + hover states</li>
+                    </ul>
+                    <button class="btn" type="button">View course</button>
+                  </div>
+                </article>
+
+                <article class="course-card" tabindex="0" aria-label="Course: AI for Productivity at Work">
+                  <div class="course-card__top">
+                    <div>
+                      <div class="course-card__picture">New</div>
+                      <div class="course-card__name">AI for Productivity at Work</div>
+                      <div class="course-card__path">AI · Workflow</div>
+                    </div>
+                    <div class="course-card__logo" aria-label="Provider logo">
+                      <img
+                        src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/00atxywtfxvd/3ZIhQ7yxmgGMFZGtlqpCG6/0d0f40bc5133948bb3805cab25af62ba/Google-G_360x360.png?auto=format%2Ccompress&w=48&h=48"
+                        width="28"
+                        height="28"
+                        alt="Google"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="course-card__metaRow">
+                    <div class="course-card__meta">3h · Beginner</div>
+                    <div class="course-card__meta">Updated 2026</div>
+                  </div>
+
+                  <div class="popover" role="note" aria-label="Course details">
+                    <div class="popover__title">Course info</div>
+                    <div class="popover__tags">
+                      <span class="tag tag--primary">Templates</span>
+                      <span class="tag">Best practices</span>
+                    </div>
+                    <div class="popover__facts">
+                      <span>Level: Beginner</span>
+                      <span>Time: 3 hours</span>
+                      <span>Language: English</span>
+                    </div>
+                    <div class="popover__desc">
+                      Learn safe, repeatable ways to use AI for emails, meeting notes, and planning—without leaking sensitive information.
+                    </div>
+                    <ul class="popover__list">
+                      <li>Prompt patterns for common tasks</li>
+                      <li>Quality checks and fact validation</li>
+                      <li>Privacy-aware workflows</li>
+                    </ul>
+                    <button class="btn" type="button">View course</button>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <button class="row__nav row__nav--right" type="button" aria-label="Scroll right" data-row-nav="1">
+              <svg viewBox="0 0 24 24" class="icon">
+                <path
+                  d="M9.5 6.3a1 1 0 0 0 0 1.4l4.3 4.3l-4.3 4.3a1 1 0 1 0 1.4 1.4l5-5a1 1 0 0 0 0-1.4l-5-5a1 1 0 0 0-1.4 0Z"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--底部栏-->
+    <footer class="footer" aria-label="Footer">
+      <div class="container footer__grid">
+        <section class="footer__col">
+          <div class="footer__title">CocoFlow</div>
+          <a class="footer__link" href="#" role="link">About</a>
+          <a class="footer__link" href="#" role="link">Social impact</a>
+          <a class="footer__link" href="#" role="link">Free courses</a>
+          <a class="footer__link" href="#" role="link">Share your learning story</a>
+        </section>
+
+        <section class="footer__col">
+          <div class="footer__title">Community</div>
+          <a class="footer__link" href="#" role="link">Learners</a>
+          <a class="footer__link" href="#" role="link">Partners</a>
+          <a class="footer__link" href="#" role="link">Beta testers</a>
+          <a class="footer__link" href="#" role="link">Blog</a>
+          <a class="footer__link" href="#" role="link">Partner blog</a>
+          <a class="footer__link" href="#" role="link">Engineering blog</a>
+        </section>
+
+        <section class="footer__col">
+          <div class="footer__title">More</div>
+          <a class="footer__link" href="#" role="link">Press</a>
+          <a class="footer__link" href="#" role="link">Investors</a>
+          <a class="footer__link" href="#" role="link">Terms</a>
+          <a class="footer__link" href="#" role="link">Privacy</a>
+          <a class="footer__link" href="#" role="link">Help</a>
+          <a class="footer__link" href="#" role="link">Contact</a>
+          <a class="footer__link" href="#" role="link">Cookie preferences</a>
+        </section>
+
+        <section class="footer__col footer__col--download">
+          <div class="store-btn" role="button" tabindex="0" aria-label="App Store">
+            <div class="store-btn__logo"></div>
+            <div class="store-btn__text">App Store</div>
+          </div>
+          <div class="store-btn" role="button" tabindex="0" aria-label="Google Play">
+            <div class="store-btn__logo">▶</div>
+            <div class="store-btn__text">Google Play</div>
+          </div>
+        </section>
+      </div>
+
+      <div class="footer__bottom">
+        <div class="footer__copyright">© 2026 CocoFlow. All rights reserved.</div>
+      </div>
+    </footer>
+
+    <div class="overlay" id="overlay" aria-hidden="true">
+      <div class="overlay__backdrop" data-close="true"></div>
+      <div class="overlay__panel" role="dialog" aria-modal="true" aria-label="Course preview">
+        <button class="overlay__close" type="button" aria-label="Close" data-close="true">
+          <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
+            <path
+              d="M18.3 5.7a1 1 0 0 1 0 1.4L13.4 12l4.9 4.9a1 1 0 1 1-1.4 1.4L12 13.4l-4.9 4.9a1 1 0 0 1-1.4-1.4l4.9-4.9L5.7 7.1a1 1 0 0 1 1.4-1.4l4.9 4.9l4.9-4.9a1 1 0 0 1 1.4 0Z"
+            />
+          </svg>
+        </button>
+        <div class="overlay__content" id="overlayContent"></div>
+      </div>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <div class="ctooltip" id="courseTooltip" aria-hidden="true">
+      <div class="ctooltip__inner" id="courseTooltipInner"></div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
